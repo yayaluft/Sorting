@@ -30,4 +30,14 @@ public class Sorting10 {
         }
         System.out.println();
     }
+    void SelectionSort(){
+        for (int i=0; i < jumData-1; i++){
+            int min=i;
+            for (int j=i+1; j< jumData; j++){
+                if(data[j]<data[min]){
+                    min=j;
+                }
+            }
+        }
+    }
 }
