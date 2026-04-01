@@ -1,12 +1,14 @@
 package praktikum05;
+
 import java.util.Scanner;
+
 public class MahasiswaDemo10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MahasiswaBerprestasi10 list = new MahasiswaBerprestasi10();
 
-        for(int i =1; i <= 5; i++){
-            System.out.println("--Mahasiswa ke-"+i+" --");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("--Mahasiswa ke-" + i + " --");
             System.out.print("NIM   : ");
             String nim = sc.nextLine();
             System.out.print("Nama  : ");
@@ -30,6 +32,10 @@ public class MahasiswaDemo10 {
 
         System.out.println("Data yang sudah terurut mengguakan SELECTION SORT (ASC)");
         list.selectionSort();
-        list.tampil()
+        list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (ASC)");
+        list.insertionSort();
+        list.tampil();
     }
 }
